@@ -1,0 +1,33 @@
+\section{Results}
+
+\lipsum[5-6]
+
+\setlength{\tabcolsep}{4pt} % default ~6pt
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{|
+        S[table-format=1.5,table-number-alignment=center] !{\vrule width 1.2pt}
+        S[table-format=1.5] |
+        S[table-format=1.5] |
+        S[table-format=1.2] !{\vrule width 1.2pt}
+        S[table-format=1.4] |
+    }
+    \hline
+    \rowcolor{gray}
+    {$m_{\textnormal{load}}$} & {$A$} & {$\gamma$} & {$\omega'$} & {$R^2$}\\
+    \rowcolor{gray}
+    {(\si{\kilo\gram})} & {(\si{\meter})} & {(\si{\per\second})} & {(\si{\radian\per\second})} & {}\\
+    \hline
+    0,05025 & 0,01133 & 0,01424 & 21,47 & 0,9990\\
+    0,10014 & 0,01220 & 0,01952 & 15,43 & 0,7385\\
+    0,15044 & 0,02408 & 0,01578 & 12,53 & 0,9947\\
+    0,20011 & 0,04302 & 0,01286 & 10,89 & 0,9996\\
+    0,25019 & 0,04420 & 0,00744 & 9,75 & 0,9894\\
+    0,30012 & 0,11210 & 0,01183 & 8,92 & 0,9999\\
+    0,34991 & 0,13050 & 0,01138 & 8,28 & 0,9999\\
+    \hline
+    \end{tabular}
+    \caption{Curve fitting parameters for the smallest spring.}
+    \label{tab:smallspring}
+\end{table}
+
