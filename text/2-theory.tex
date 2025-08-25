@@ -1,3 +1,59 @@
 \section{Theory}
 
-\lipsum[30-36]
+\lipsum[30]
+
+\nopagebreak
+
+\begin{strip}
+\begin{equation}
+\begin{aligned}
+\sum \vect{F} = m\vect{a} &= \vect{F}_{\text{restoring}} + \vect{F}_{\text{damping}} \\
+                m\vect{g} &= -k\vect{x} - b\vect{v} \\
+                        0 &= k\vect{x} + b\odv{\vect{x}}{t} + m\odv[2]{\vect{x}}{t} \\
+                        0 &= k\vect{x} + b\odv{\vect{x}}{t} + m\odv[2]{\vect{x}}{t} \\
+						0 &= \frac{k}{m}\vect{x} + \frac{b}{m}\odv{\vect{x}}{t} + \odv[2]{\vect{x}}{t} \\
+						0 &= \frac{k}{m}e^{ut} + \frac{b}{m}\odv{(e^{ut})}{t} + \odv[2]{(e^{ut})}{t} \\
+						0 &= k + bu + mu^2 \\
+						u &= \frac{-b \pm \sqrt{b^2 - 4km}}{2m}
+\end{aligned}
+\end{equation}
+
+\vspace{1em}
+\begin{center}
+\text{Assume the spring is underdamped (\textit{i.e.} $b^2 - 4km < 0$)}
+\end{center}
+
+\begin{equation}
+\begin{aligned}
+\vect{x} &= \alpha e^{\left(\frac{-b + \sqrt{b^2 - 4km}}{2m}\right)t} + \beta e^{\left(\frac{-b - \sqrt{b^2 - 4km}}{2m}\right)t} \\
+		 &= e^{-\tfrac{bt}{2m}}\left[ \alpha e^{\left(\frac{\sqrt{b^2 - 4km}}{2m}\right)t} + \beta e^{\left(\frac{-\sqrt{b^2 - 4km}}{2m}\right)t} \right] \\
+         &= e^{-\tfrac{bt}{2m}}\left[ \alpha e^{\left(\tfrac{i\sqrt{4km - b^2}}{2m}\right)t} + \beta e^{\left(\tfrac{-i\sqrt{4km - b^2}}{2m}\right)t} \right] \\
+         &= e^{-\tfrac{bt}{2m}}\left[ (\alpha+\beta)\cos\left(\tfrac{\sqrt{4km - b^2}}{2m}t\right) + i(\alpha-\beta)\sin\left(\frac{t\sqrt{4km - b^2}}{2m}t\right)\right] \\
+	     &= 2\sqrt{\alpha\beta}e^{\left(-\tfrac{b}{2m}\right)t}\cos\left(\tfrac{\sqrt{4km - b^2}}{2m}t + \phi\right)
+\end{aligned}
+\end{equation}
+
+\vspace{2em}
+\begin{equation*}      
+\begin{aligned}
+\text{Let } A &= 2\sqrt{\alpha\beta} \\
+       \gamma &= \frac{b}{2m} \\
+      \omega' &= \frac{\sqrt{4km - b^2}}{2m}
+\end{aligned}
+\end{equation*}
+
+\vspace{1em}
+\[\therefore \vect{x} = Ae^{-\gamma t} \cos\left(\omega' t + \phi\right)\]
+\end{strip}
+
+\lipsum[31-32]
+\begin{equation}
+\begin{aligned}
+          \omega' &= \frac{\sqrt{4km - b^2}}{2m} \\
+4 m^2 {\omega'}^2 &= km - m^2 b^2 \\
+  m^2 {\omega'}^2 &= km - m^2 {\gamma}^2 \\
+                k &= m \sqrt{{\omega'}^2 - {\gamma}^2}
+\end{aligned}
+\end{equation}
+
+\lipsum[33-34]

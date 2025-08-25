@@ -3,7 +3,8 @@
 \lipsum[5-6]
 
 \setlength{\tabcolsep}{4pt} % default ~6pt
-\begin{table}[htb]
+\begin{table}[!h]
+	\caption{Regression parameters for the light spring.}
     \centering
     \begin{tabular}{|
         S[table-format=1.5,table-number-alignment=center] !{\vrule width 1.2pt}
@@ -13,21 +14,71 @@
         S[table-format=1.4] |
     }
     \hline
-    \rowcolor{gray}
-    {$m_{\textnormal{load}}$} & {$A$} & {$\gamma$} & {$\omega'$} & {$R^2$}\\
-    \rowcolor{gray}
+    \rowcolor{lightgray}
+    {$m{\textsubscript{load}}$} & {$A$} & {$\gamma$} & {$\omega'$} & {$R^2$}\\
+    \rowcolor{lightgray}
     {(\si{\kilo\gram})} & {(\si{\meter})} & {(\si{\per\second})} & {(\si{\radian\per\second})} & {}\\
     \hline
-    0,05025 & 0,01133 & 0,01424 & 21,47 & 0,9990\\
-    0,10014 & 0,01220 & 0,01952 & 15,43 & 0,7385\\
-    0,15044 & 0,02408 & 0,01578 & 12,53 & 0,9947\\
-    0,20011 & 0,04302 & 0,01286 & 10,89 & 0,9996\\
-    0,25019 & 0,04420 & 0,00744 & 9,75 & 0,9894\\
-    0,30012 & 0,11210 & 0,01183 & 8,92 & 0,9999\\
-    0,34991 & 0,13050 & 0,01138 & 8,28 & 0,9999\\
+    0,05025 & 0,01133 & 0,02424 & 21,47 & 0,9990 \\
+	0,10014 & 0,01220 & 0,01752 & 15,43 & 0,8385 \\
+	0,15044 & 0,02408 & 0,01478 & 12,53 & 0,9947 \\
+	0,20011 & 0,04302 & 0,01326 & 10,89 & 0,9996 \\
+	0,25019 & 0,04420 & 0,01224 & 9,75 & 0,9894 \\
+	0,30012 & 0,11210 & 0,01183 & 8,92 & 0,9999 \\
+	0,34991 & 0,13050 & 0,01138 & 8,28 & 0,9999 \\
     \hline
     \end{tabular}
-    \caption{Curve fitting parameters for the smallest spring.}
-    \label{tab:smallspring}
+    \label{tab:lightspring}
 \end{table}
 
+\begin{table}[!h]
+	\caption{Regression parameters for the stiff spring.}
+    \centering
+    \begin{tabular}{|
+        S[table-format=1.5,table-number-alignment=center] !{\vrule width 1.2pt}
+        S[table-format=1.5] |
+        S[table-format=1.5] |
+        S[table-format=1.2] !{\vrule width 1.2pt}
+        S[table-format=1.4] |
+    }
+    \hline
+    \rowcolor{lightgray}
+    {$m{\textsubscript{load}}$} & {$A$} & {$\gamma$} & {$\omega'$} & {$R^2$}\\
+    \rowcolor{lightgray}
+    {(\si{\kilo\gram})} & {(\si{\meter})} & {(\si{\per\second})} & {(\si{\radian\per\second})} & {}\\
+    \hline
+    0,30010 & 0,03017 & 0,00777 & 13,41 & 0,9971 \\
+	0,35014 & 0,04513 & 0,00654 & 12,45 & 0,9955 \\
+	0,40014 & 0,05404 & 0,00595 & 11,67 & 0,9993 \\
+	0,45004 & 0,06417 & 0,00535 & 11,02 & 0,9993 \\
+	0,49984 & 0,06948 & 0,00491 & 10,47 & 0,9995 \\
+    \hline
+    \end{tabular}
+    \label{tab:stiffspring}
+\end{table}
+
+\begin{table}[!h]
+	\caption{Regression parameters for two stiff springs in series.}
+    \centering
+    \begin{tabular}{|
+        S[table-format=1.5,table-number-alignment=center] !{\vrule width 1.2pt}
+        S[table-format=1.5] |
+        S[table-format=1.5] |
+        S[table-format=1.2] !{\vrule width 1.2pt}
+        S[table-format=1.4] |
+    }
+    \hline
+    \rowcolor{lightgray}
+    {$m{\textsubscript{load}}$} & {$A$} & {$\gamma$} & {$\omega'$} & {$R^2$}\\
+    \rowcolor{lightgray}
+    {(\si{\kilo\gram})} & {(\si{\meter})} & {(\si{\per\second})} & {(\si{\radian\per\second})} & {}\\
+    \hline
+    0,30010 & 0,07161 & 0,00496 & 9,581 & 0,9996 \\
+	0,35014 & 0,09685 & 0,00432 & 8,907 & 0,9995 \\
+	0,40014 & 0,1114  & 0,00347 & 8,363 & 0,9991 \\
+	0,45004 & 0,1214  & 0,00311 & 7,907 & 0,9995 \\
+	0,49984 & 0,1385  & 0,00279 & 7,517 & 0,9996 \\
+    \hline
+    \end{tabular}
+    \label{tab:seriesstiffsprings}
+\end{table}
