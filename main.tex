@@ -11,6 +11,11 @@
 \selectlanguage{english}
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathmorphing}
+\usepackage{newfloat}
+\usepackage{multicol}
+\usepackage[section]{placeins}
+
+\DeclareFloatingEnvironment[fileext=lof]{graph}[Graph][List of Graphs]
 
 \let\oldsqrt\sqrt
 \def\sqrt{\mathpalette\DHLhksqrt}
@@ -43,8 +48,10 @@
 \input{text/1-introduction}
 \clearpage
 \input{text/2-theory}
+\clearpage
 \input{text/3-method}
 \input{text/4-results}
+\nopagebreak
 \input{text/5-analysis}
 \input{text/6-conclusion}
 

@@ -1,62 +1,66 @@
 \section{Theory}
 
-\lipsum[30]
-
 \nopagebreak
 
-\begin{strip}
-\begin{equation}
-\begin{aligned}
+To model the motion mathematically, Newton's Second Law can be applied to the system for the applied, restoring, and damping forces. This results in a second-order differential equation that can be solved to find the displacement of the mass and the rate of amplitude decay, establishing the basis for determining $k$ and $b$ experimentally.
+
+\begin{align*}
 \sum \vect{F} = m\vect{a} &= \vect{F}_{\text{restoring}} + \vect{F}_{\text{damping}} \\
                 m\vect{g} &= -k\vect{x} - b\vect{v} \\
                         0 &= k\vect{x} + b\odv{\vect{x}}{t} + m\odv[2]{\vect{x}}{t} \\
                         0 &= k\vect{x} + b\odv{\vect{x}}{t} + m\odv[2]{\vect{x}}{t} \\
 						0 &= \frac{k}{m}\vect{x} + \frac{b}{m}\odv{\vect{x}}{t} + \odv[2]{\vect{x}}{t} \\
-						0 &= \frac{k}{m}e^{ut} + \frac{b}{m}\odv{(e^{ut})}{t} + \odv[2]{(e^{ut})}{t} \\
-						0 &= k + bu + mu^2 \\
-						u &= \frac{-b \pm \sqrt{b^2 - 4km}}{2m}
-\end{aligned}
-\end{equation}
+						0 &= \frac{k}{m}e^{\lambda t} + \frac{b}{m}\odv{(e^{\lambda t})}{t} + \odv[2]{(e^{\lambda t})}{t} \\
+						0 &= k + bu + m{\lambda}^2 \\
+				  \lambda &= \frac{-b \pm \sqrt{b^2 - 4km}}{2m} \\
+		   		  \lambda &= -\frac{b}{2m} \pm \frac{\sqrt{b^2 - 4km}}{2m} \\
+		   		  \intertext{It is assumed that the spring will be underdamped, meaning the damping is weak enough that the system oscillates around equilibrium before settling. Physically, this requires that $b^2 - 4km < 0$, so the displacement equation has complex roots and produces harmonic motion.}
+		 \implies \lambda &= -\frac{b}{2m} \pm \frac{i \sqrt{4km - b^2}}{2m} \\
+		   		  \intertext{Given $\gamma = \frac{b}{2m}$ and $\omega' = \frac{\sqrt{4km - b^2}}{2m}$}
+		 \implies \lambda &= -\gamma \pm i \omega' \\
+		 \intertext{The general solution for $\vect{x}=e^{\lambda t}$ is a linear combination of the solutions corresponding to each root $\lambda$, as required for a second-order differential equation.}
+\end{align*}
 
-\vspace{0.5em}
-\begin{center}
-\text{Assume the spring is underdamped (\textit{i.e.} $b^2 - 4km < 0$)}
-\end{center}
+\vspace{-4em}
 
-\begin{equation}
-\begin{aligned}
-\vect{x} &= \alpha e^{\left(\frac{-b + \sqrt{b^2 - 4km}}{2m}\right)t} + \beta e^{\left(\frac{-b - \sqrt{b^2 - 4km}}{2m}\right)t} \\
-		 &= e^{-\tfrac{bt}{2m}}\left[ \alpha e^{\left(\frac{\sqrt{b^2 - 4km}}{2m}\right)t} + \beta e^{\left(\frac{-\sqrt{b^2 - 4km}}{2m}\right)t} \right] \\
-         &= e^{-\tfrac{bt}{2m}}\left[ \alpha e^{\left(\tfrac{i\sqrt{4km - b^2}}{2m}\right)t} + \beta e^{\left(\tfrac{-i\sqrt{4km - b^2}}{2m}\right)t} \right] \\
-         &= e^{-\tfrac{bt}{2m}}\left[ (\alpha+\beta)\cos\left(\tfrac{\sqrt{4km - b^2}}{2m}t\right) + i(\alpha-\beta)\sin\left(\frac{t\sqrt{4km - b^2}}{2m}t\right)\right] \\
-	     &= 2\sqrt{\alpha\beta}e^{\left(-\tfrac{b}{2m}\right)t}\cos\left(\tfrac{\sqrt{4km - b^2}}{2m}t + \phi\right)
-\end{aligned}
-\end{equation}
+\begin{align*}
+\vect{x} &= \alpha e^{\left(-\gamma + i \omega'\right)t} + \beta e^{\left(-\gamma - i \omega'\right)t} \\
+         &= e^{-\gamma t}\left[ \alpha e^{i \omega' t} + \beta e^{-i \omega' t}\right] \\
+         &= e^{-\gamma t}\left[ (\alpha+\beta)\cos\left(\omega' t\right) + i(\alpha-\beta)\sin\left(\omega' t\right)\right] \\
+	     &= 2\sqrt{\alpha\beta}e^{-\gamma t}\cos\left(\omega' t + \phi\right) \\
+	     \intertext{Letting $A = 2\sqrt{\alpha\beta}$:}
+\end{align*}
 
-\vspace{2em}
+\vspace{-2em}
+
 \begin{equation*}
-\begin{aligned}
-\text{Let } A &= 2\sqrt{\alpha\beta} \\
-       \gamma &= \frac{b}{2m} \\
-      \omega' &= \frac{\sqrt{4km - b^2}}{2m}
-\end{aligned}
+\therefore \vect{x} = Ae^{-\gamma t} \cos\left(\omega' t + \phi\right)
 \end{equation*}
 
-\vspace{1em}
-\begin{equation} 
-\therefore \vect{x} = Ae^{-\gamma t} \cos\left(\omega' t + \phi\right)
-\end{equation}
-\end{strip}
+\vspace{2em}
 
-\lipsum[31-32]
-\begin{equation}
+\noindent The oscillatory behaviour of a mass-spring system arises from the continual transformation between kinetic and potential energy, represented by the cosine term in the displacement equation. When the spring is displaced from its equilibrium position, potential energy is stored in the spring, and the speed of the mass decreases toward a minimum for that cycle. As the mass passes through equilibrium, this potential energy is converted almost entirely into kinetic energy, producing the maximum speed for the cycle.
+
+However, this process is not perfectly efficient as the damping force removes energy from the system, predominantly as heat, which causes the amplitude of oscillations to decrease gradually over time. This decay is captured by the exponential term in the displacement equation. This process drives the sinusoidal and decaying components of motion, which are quantified by the damped angular frequency $\omega'$ and decay constant $\gamma$
+
+The damped angular frequency $\omega'$ is dependent on both the spring constant $k$ and the damping coefficient $b$, as evident in its formula $\omega' = \tfrac{\sqrt{4 k m - b^2}}{2 m}$.
+
+\begin{equation*}
 \begin{aligned}
              \omega' &= \frac{\sqrt{4 k m - b^2}}{2 m} \\
-           \omega'^2 &= \frac{4 k m - b^2}{4 m^2} \\
            \omega'^2 &= \frac{k}{m} - \frac{b^2}{4 m^2} \\
            \omega'^2 &= \frac{k}{m} - \gamma^2 \quad \quad \text{with } \gamma = \frac{b}{2 m} \\
 \omega'^2 + \gamma^2 &= k \left(\frac{1}{m}\right)
 \end{aligned}
-\end{equation}
+\end{equation*}
 
-\lipsum[33]
+\noindent As shown above, plotting $\omega'^2 + \gamma^2$ against $m^{-1}$ should give a straight line with gradient $k$. The spring constant $k$ represents the stiffness of the spring, and quantifies the relationship between the spring's restoring force and resulting displacement according to Hooke's law ($\vect{F}_{\text{restoring}} = -k \vect{x}$).
+
+\begin{equation*}
+\begin{aligned}
+             \gamma &= \frac{b}{2m} \\
+             		&= \frac{b}{2} \left(\frac{1}{m}\right)
+\end{aligned}
+\end{equation*}
+
+\noindent Similarly, plotting the decay constant $\gamma$ against $m^{-1}$ should produce a straight line with gradient $b/2$, allowing determination of the damping coefficient $b$. This coefficient characterises the velocity-relative magnitude of the resistive force opposing motion, responsible for gradual reduction in oscillation amplitude.
