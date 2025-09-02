@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.24)  2 SEP 2025 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.24)  2 SEP 2025 15:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1801,13 +1801,13 @@ Package hyperref Info: Link coloring ON on input line 45.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
  (text/0-preface.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
 
 (C:\Users\James\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (C:\Users\James\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1951,27 +1951,31 @@ Overfull \hbox (1.37054pt too wide) in paragraph at lines 15--16
 ]
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 36.
+(caption)                outside box or environment on input line 47.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
+(caption)                particular \caption on input line 47.
 See the caption package documentation for explanation.
+
+) (text/6-evaluation.tex
 
 )
 
-(text/6-evaluation.tex)
-
 [6] (text/7-conclusion.tex)
 
-
-LaTeX Warning: Empty bibliography on input line 59.
-
+LaTeX Warning: Empty bibliography on input line 60.
 
 
-[7]
-runsystem(latexminted cleantemp  --timestamp 20250902140831 FAD58DE7366495DB465
+
+
+
+[7
+
+
+]
+runsystem(latexminted cleantemp  --timestamp 20250902153919 FAD58DE7366495DB465
 0CFEFAC2FCD61)...executed.
 
  (main.aux
@@ -2000,9 +2004,9 @@ Here is how much of TeX's memory you used:
 0600.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\tcrm1000.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/pk/ljfour/public/math
 abx/dpi600\matha10.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecrm0700.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\James\AppData\Local\MiKTeX\f
+appen/ec/dpi600\ecti1000.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/pk/ljfo
+ur/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\James\AppData\Local\MiKTeX\fonts/p
+k/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\James\AppData\Local\MiKTeX\f
 onts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\James\AppData\Local\Mi
 KTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\James\AppData\Lo
 cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\James\AppD
@@ -2026,7 +2030,7 @@ cm/cmsy5.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (7 pages, 547449 bytes).
+Output written on main.pdf (7 pages, 547631 bytes).
 PDF statistics:
  592 PDF objects out of 1000 (max. 8388607)
  39 named destinations out of 1000 (max. 500000)

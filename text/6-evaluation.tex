@@ -1,16 +1,15 @@
 \section{Evaluation}
 
-\lipsum[10]
+A significant systematic source of error in this investigation arises from neglecting the mass of the spring itself. The oscillating system’s effective mass is not only from the attached load but includes a portion of the spring’s mass, typically approximated as $m_{\mathrm{equ}} = m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}$. Failure to account for this results in an overestimation of $\gamma$ for a given $m\_{\mathrm{load}}$, particularly for lighter loads where the spring mass constitutes a larger fraction of the total oscillating mass. The impact can be quantified as shown below, demonstrating that neglecting the spring mass reduces the accuracy of the measured gradient in $\gamma$ versus $m_{\mathrm{load}}^{-1}$. To mitigate this, future analyses should explicitly include the spring’s contribution to the effective mass in all calculations, ensuring that calculated parameters more accurately reflect the actual system values.
 
 \begin{align*}
-\intertext{Let $m_{\mathrm{eq}} = m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}$ and $\lambda = m_{\mathrm{load}}^{-1}$}
-\gamma &= \frac{b}{2 m_{\mathrm{eq}}} \\
+\intertext{Let $m_{\mathrm{equ}} = m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}$ and $\lambda = m_{\mathrm{load}}^{-1}$}
+\gamma &= \frac{b}{2 m_{\mathrm{equ}}} \\
        &= \frac{b}{2 \left(m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
        &= \frac{b}{2 \left(\tfrac{1}{\lambda} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
        &= \frac{b}{2} \frac{\lambda}{1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda} \\
 \therefore \frac{d \gamma}{d \lambda} &= \frac{b}{2} \frac{1}{\left(1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda\right)^2}
 \end{align*}
-
 \vspace{1em}
 
-\lipsum[11 - 13]
+Random errors also affected the investigation, particularly due to environmental and material factors. Uncontrolled air resistance introduces variability in the observed amplitude decay, reducing precision in the determination of $\gamma$ across repeated trials. This can be minimised by conducting the experiment in a closed environment or vacuum chamber, thereby stabilising external forces acting on the oscillating mass. Additionally, plastic deformation of the springs over repeated oscillations alters their effective spring constants between trials, introducing both random and systematic deviations in measured $\gamma$ and $\omega'$. Using springs made from metals with low plasticity or replacing springs with near-perfect replicas between trials would reduce these effects, improving both the accuracy and reliability of results.
