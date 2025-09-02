@@ -10,18 +10,13 @@ k_{\text{single stiff}} &= 53.1 \si{\kilo\gram\per\second\squared} \\
 k_{\text{series stiff}} &= 26.5 \si{\kilo\gram\per\second\squared}
 \end{align*}
 
-Given spring constant reflects the force required to stretch the spring a certain distance, it follows that the stiff spring has a higher $k$ value than the light spring. Furthermore, the precision of the data can be testified by application of the general spring constant equation that states that the $k_{\text{equivalent}}$ of two identical springs in series is equal to $\tfrac{1}{2}k_{\text{single stiff}}$. From the measured $k_{\text{single stiff}}$, the theoretical equivalent series spring constant is $\tfrac{1}{2} \left( 53.1 \right) = 26.6 \; \text{(3 s.f.)}$. This possesses a highly respectable percentage error of $- 0.376 \%$ between the calculated and empirical values, solidifying the relative precision between calculations.
+Given spring constant reflects the force required to stretch the spring a certain distance, it follows that the stiff spring has a higher $k$ value than the light spring. Furthermore, the precision of the data can be testified by application of the general spring constant equation that states that the $k_{\text{equivalent}}$ of two identical springs in series is equal to $\tfrac{1}{2}k_{\text{single stiff}}$. From the measured $k_{\text{single stiff}}$, the theoretical equivalent series spring constant is \linebreak$\tfrac{1}{2} \left( 53.1 \right) = 26.6 \; \text{(3 s.f.)}$. This possesses a highly respectable percentage error of $- 0.376 \%$ between the calculated and empirical values, solidifying the relative precision between calculations.
 
-\textbf{Graph 2} depicts a slightly more ambiguous pattern. Unlike the clear proportionality observed in \textbf{Graph 1}, the relationship between $\gamma$ and $m_{\text{load}}^{-1}$ shows greater scatter, and the physical interpretation of the linear fit is less direct. Both the stiff spring and series stiff spring datasets still yield strong linear correlations ($R^2 = 0.9942$ and $0.9891$ respectively), but the fitted lines have small but non-negligible intercepts, one positive and one negative. These offsets suggest random influences outside the idealised damping model, such as frictional or measurement effects that contribute to a baseline damping constant independent of mass.
+Focusing on the tabulated data for the light spring, the curve fit for $m_{\text{load}} = 0.10014 ; \si{\kilo\gram}$ exhibits an anomalously low $R^2$ value of 0.8385. During the data collection period, the spring system was observed to alternate between predominantly vertical oscillation and pendulum-like motion. This behaviour can be attributed to non-linear mode coupling, in which energy is transferred between distinct modes of motion, such that vertical oscillations couple to lateral or rotational motions. In this instance, near-resonance between the vertical spring mode and the pendulum mode allowed for periodic energy exchange between the modes, resulting in the observed switching between vertical and pendular motion. This phenomenon violates the initial assumption of a purely linear, one-dimensional mass-spring system, diminishing the quality of the exponential decay fit and indicating the presence of non-linear dynamics in low-mass, flexible spring configurations. It was not considered in the determination of the line of best fit in \textbf{Graph 1}.
 
-\begin{align*}
-\intertext{Let $m_{\mathrm{eq}} = m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}$ and $\lambda = m_{\mathrm{load}}^{-1}$}
-\gamma &= \frac{b}{2 m_{\mathrm{eq}}} \\
-       &= \frac{b}{2 \left(m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
-       &= \frac{b}{2 \left(\tfrac{1}{\lambda} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
-       &= \frac{b}{2} \frac{\lambda}{1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda} \\
-\therefore \frac{d \gamma}{d \lambda} &= \frac{b}{2} \frac{1}{\left(1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda\right)^2}
-\end{align*}
+\textbf{Graph 2} depicts a slightly more ambiguous pattern. Unlike the clear proportionality observed in \textbf{Graph 1}, the relationship between $\gamma$ and $m_{\text{load}}^{-1}$ shows greater scatter, and the physical interpretation of the linear fit is less direct. Both the stiff spring and series stiff spring datasets still yield strong linear correlations ($R^2 = 0.9942$ and $0.9891$ respectively), but the fitted lines have small but non-negligible intercepts, one positive and one negative. These offsets suggest influences outside the idealised damping model, such as frictional or measurement effects that contribute to a damping coefficient $b$ independent of mass.
+
+To assess whether the difference in gradients and thus in the damping coefficient $b$ between the single and series stiff spring datasets is statistically meaningful, 95\% confidence intervals were calculated. As shown below, these intervals do not overlap, confirming that the difference in $b$ is significant at the 5\% level and supporting the interpretation that the spring configuration has a measurable effect on damping.
 
 \begin{align*}
 \intertext{$\bar{b}_{\textsubscript{single}} = 4.22 \times 10^{-3} \si{\kilo\gram\per\second}, s.e.\left(b_{\textsubscript{single}} \right) = 0.00018$}
@@ -39,6 +34,15 @@ Given spring constant reflects the force required to stretch the spring a certai
 \vspace{-2em}
 
 \captionof{figure}{Calculations of 95\% confidence intervals for the $b$ values of the single and series configurations.}
+
+\begin{align*}
+\intertext{Let $m_{\mathrm{eq}} = m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}$ and $\lambda = m_{\mathrm{load}}^{-1}$}
+\gamma &= \frac{b}{2 m_{\mathrm{eq}}} \\
+       &= \frac{b}{2 \left(m_{\mathrm{load}} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
+       &= \frac{b}{2 \left(\tfrac{1}{\lambda} + \tfrac{1}{3} m_{\mathrm{spring}}\right)} \\
+       &= \frac{b}{2} \frac{\lambda}{1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda} \\
+\therefore \frac{d \gamma}{d \lambda} &= \frac{b}{2} \frac{1}{\left(1 + \tfrac{1}{3} m_{\mathrm{spring}} \, \lambda\right)^2}
+\end{align*}
 
 \vspace{1em}
 
