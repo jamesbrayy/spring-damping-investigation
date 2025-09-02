@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.24)  2 SEP 2025 03:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.24)  2 SEP 2025 12:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1931,22 +1931,41 @@ CUTED [output]: 0.0pt
 CUTED [leftcolumn badness]: 0
 CUTED [rightcolumn badness]: 0
 ) (text/5-analysis.tex
-
-
-Overfull \hbox (5.10477pt too wide) in paragraph at lines 4--4
-[]\T1/cmr/m/n/10 Morbi luc-tus, wisi vi-verra fau-ci-bus pre-tium, nibh
+Overfull \hbox (2.94403pt too wide) in paragraph at lines 3--4
+\T1/cmr/m/n/10 and de-cay con-stant squared ($\OML/cmm/m/it/10 ![] \OT1/cmr/m/n
+/10 + \OML/cmm/m/it/10 ^^M[]$\T1/cmr/m/n/10 ) against $\OML/cmm/m/it/10 m[]$\T1
+/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (51.29672pt too wide) detected at line 17
-[]
+Overfull \hbox (0.31427pt too wide) in paragraph at lines 13--14
+[]\T1/cmr/m/n/10 Given spring con-stant re-flects the force re-quired
  []
+
+
+Overfull \hbox (23.07695pt too wide) in paragraph at lines 13--14
+\T1/cmr/m/n/10 the-o-ret-i-cal equiv-a-lent se-ries spring con-stant is $[] [] 
+\OT1/cmr/m/n/10 =
+ []
+
+
 
 
 
 [5
 
-]) (text/6-conclusion.tex
+]
+
+Package caption Warning: \setcaptiontype
+(caption)                outside box or environment on input line 41.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 41.
+See the caption package documentation for explanation.
+
+) (text/6-conclusion.tex
 
 )
 
@@ -1955,7 +1974,7 @@ LaTeX Warning: Empty bibliography on input line 58.
 
 
 [6]
-runsystem(latexminted cleantemp  --timestamp 20250902034506 FAD58DE7366495DB465
+runsystem(latexminted cleantemp  --timestamp 20250902120616 FAD58DE7366495DB465
 0CFEFAC2FCD61)...executed.
 
  (main.aux
@@ -1973,9 +1992,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68738 strings out of 468134
- 1653203 string characters out of 5430740
- 2975236 words of memory out of 5000000
+ 68739 strings out of 468134
+ 1653211 string characters out of 5430740
+ 2975237 words of memory out of 5000000
  96541 multiletter control sequences out of 15000+600000
  644262 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2010,9 +2029,9 @@ cm/cmsy5.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmsy6.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb><C:/Users/James/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (6 pages, 534745 bytes).
+Output written on main.pdf (6 pages, 540781 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 579 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
